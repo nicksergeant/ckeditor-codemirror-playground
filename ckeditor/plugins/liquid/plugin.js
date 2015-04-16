@@ -52,6 +52,7 @@ CKEDITOR.plugins.add('liquid', {
         editor.fire('saveSnapshot');
         var element = CKEDITOR.dom.element.createFromHtml(value);
         editor.insertElement(element);
+        editor.insertText(' ');
         editor.fire('saveSnapshot');
       }
     });
